@@ -1,0 +1,23 @@
+[package]
+name = "counting-components"
+authors = ["Sayantan Khan <sayantangkhan@gmail.com>"]
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+name = "counting_components"
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rayon = "1.5"
+gcd = "2.0.1"
+
+[dependencies.pyo3]
+version = "0.14.3"
+features = ["extension-module"]
+
+# [features]
+# extension-module = ["pyo3/extension-module"]
+# default = ["extension-module"]
